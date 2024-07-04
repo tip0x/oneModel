@@ -4,7 +4,7 @@ public class four {
     public static void main(String[]args){
         //DECLARE THE VARIABLES
         double E = 60; //CONVERSION RATE
-        double sec = 2400; //SECONDS
+        double sec = 2549; //SECONDS
         double min = sec / E; //MINUTES
         double hour = min / E; //HOURS
         //DECIMAL FORMAT
