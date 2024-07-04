@@ -1,16 +1,19 @@
 import java.util.Scanner;
 public class seven {
+    private static Scanner sc;
     public static void main(String[] args) {
-        try (Scanner input = new Scanner(System.in)) {
-            System.out.println(
-                "1 is Pawn\n" +
-                "2 is Knight\n" +
-                "3 is Bishop\n" +
-                "4 is Rookie\n" +
-                "5 is Queen\n" +
-                "6 is King\n" +
-                "Enter a value (1 to 6): ");
-            int x = input.nextInt();
+ 
+        sc = new Scanner(System.in);
+        System.out.println(
+            "1 is Pawn\n" +
+            "2 is Knight\n" +
+            "3 is Bishop\n" +
+            "4 is Rookie\n" +
+            "5 is Queen\n" +
+            "6 is King\n" +
+            "Enter a value (1 to 6): ");
+        
+            int x = sc.nextInt();
 
             //verify range
             if (x < 1 || x > 6) {
@@ -41,5 +44,4 @@ public class seven {
     }
 }
     
-}
 
