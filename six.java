@@ -1,45 +1,42 @@
 import java.util.Scanner;
 
 public class six {
-
+    private static Scanner sc;
     public static void main(String[] args) {
         
-        try (Scanner input = new Scanner(System.in))
-            //try-with-resources ensures that the end of
-            //the block is auto closed to avoid resource leaks
-        { 
-            //starting of block
-            // Prompt the user to input three integers
+        sc = new Scanner(System.in);
+           
+        // Prompt the user to input three integers
             System.out.print("Enter the first value: ");
-            int x = input.nextInt();
+            int x = sc.nextInt();
             
             System.out.print("Enter the second value: ");
-            int y = input.nextInt();
+            int y = sc.nextInt();
             
             System.out.print("Enter the third value: ");
-            int z = input.nextInt();
+            int z = sc.nextInt();
             
             // Using swap variable for sorting values
-            int swap;
+            int i;
             
             // Compare and swap to ensure x is the smallest
             if (x > y) {
-                swap = x;
+                i = x;
                 x = y;
-                y = swap;
+                y = i;
             }
             
             if (x > z) {
-                swap = x;
+                i = x;
                 x = z;
-                z = swap;
+                z = i;
             }
             
             // Compare and swap to ensure y is smaller than z
             if (y > z) {
-                swap = y;
+                i = y;
                 y = z;
-                z = swap;
+                z = i;
             //block ends 
             }
             
@@ -48,4 +45,3 @@ public class six {
         }
     }
 
-}
