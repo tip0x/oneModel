@@ -1,5 +1,3 @@
-Ifeoma Odunze
-Adebiyi Jesutofunmi
 #CMP715 Programming 1
 
 install java compiler on vscode to run program
